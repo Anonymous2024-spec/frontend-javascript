@@ -21,3 +21,20 @@ const teacher3: Teacher = {
 
 // 4. Output to verify
 console.log(teacher3);
+
+// 2. Extend Teacher with the Directors interface
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// 3. Create a Directors object
+const director1: Directors = {
+  firstName: "John",
+  lastName: "Doe",
+  location: "London",
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+// 4. Output to confirm
+console.log(director1);
