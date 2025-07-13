@@ -1,0 +1,23 @@
+// 1. Define the Teacher interface
+interface Teacher {
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+
+  // 2. Allow any additional properties
+  [key: string]: any;
+}
+
+// 3. Create a teacher object based on the spec
+const teacher3: Teacher = {
+  firstName: "John",
+  lastName: "Doe",
+  fullTimeEmployee: false,
+  location: "London",
+  contract: false,
+};
+
+// 4. Output to verify
+console.log(teacher3);
