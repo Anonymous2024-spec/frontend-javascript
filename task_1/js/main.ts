@@ -38,3 +38,16 @@ const director1: Directors = {
 
 // 4. Output to confirm
 console.log(director1);
+
+// Function type interface
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Function implementation
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Test output
+console.log(printTeacher("John", "Doe")); // J. Doe
